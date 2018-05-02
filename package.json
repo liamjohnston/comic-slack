@@ -1,6 +1,7 @@
 {
   "name": "comic-slack",
   "version": "0.1.0",
+  "homepage": "https://liamjohnston.github.io/comic-slack/",
   "private": true,
   "dependencies": {
     "react": "^16.3.2",

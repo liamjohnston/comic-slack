@@ -34,7 +34,7 @@ class Setup extends Component {
             <h2 className="m_t_0">Get the 'emojis'</h2>
           </header>
           <div>
-            <p className="m_t_0">
+            <p className="m_t_0 cats">
               <a href={`${zipPath}characters.zip`} download>
                 &#11015; Download the images
               </a>{' '}

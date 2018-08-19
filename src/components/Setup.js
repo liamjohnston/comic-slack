@@ -35,7 +35,7 @@ class Setup extends Component {
           </header>
           <div>
             <p className="m_t_0">
-              <a href={`${zipPath}characters.zip`}>
+              <a href={`${zipPath}characters.zip`} download>
                 &#11015; Download the images
               </a>{' '}
               (zip, 70KB).

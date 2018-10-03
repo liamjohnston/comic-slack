@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from 'react';
 //import { Link } from 'react-router-dom';
 import { Link } from 'react-scroll';
-const imgPath = `${process.env.PUBLIC_URL}/img/`;
+
+import imgMenu from '../img/slack-menu.jpg';
+import imgAddToSlack from '../img/add-to-slack.jpg';
+
 const zipPath = `${process.env.PUBLIC_URL}/files/`;
 
 class Setup extends Component {
@@ -72,16 +75,13 @@ class Setup extends Component {
           </header>
           <div>
             <p className="m_t_0">Go to the 'Customize Slack' screen:</p>
-            <img
-              src={`${imgPath}slack-menu.jpg`}
-              alt="Menu showing link to Customize Slack"
-            />
+            <img src={imgMenu} alt="Menu showing link to Customize Slack" />
             <p>
               The Chrome extension you just added should have enable a bulk
               upload area on this screen. Simply drag and drop the contents of
               the 'characters' folder.
             </p>
-            <img src={`${imgPath}add-to-slack.jpg`} alt="Bulk adding emojis." />
+            <img src={imgAddToSlack} alt="Bulk adding emojis." />
           </div>
         </section>
 

@@ -5,22 +5,16 @@ import Setup from './components/Setup';
 
 import 'sanitize.css';
 import './css/styles.min.css';
-
-const imgPath = `${process.env.PUBLIC_URL}/img/`;
+import logo from './img/comic-slack.png';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
         <header className="header">
-          <img
-            src={`${imgPath}comic-slack.png`}
-            alt="Comic Slack logo"
-            width="50"
-          />
+          <img src={logo} alt="Comic Slack logo" width="50" />
           <div>
             <h1 className="m_t_0 m_b_0">Comic Slack</h1>
-            {/* <h3>Use comic sans in Slack! (sorta)</h3> */}
           </div>
         </header>
 

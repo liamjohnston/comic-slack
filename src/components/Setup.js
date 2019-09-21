@@ -19,7 +19,7 @@ class Setup extends Component {
             <p className="m_t_0">
               Basically, we'll add a bunch of Comic Sans characters as images to
               your custom emoji list in Slack. Then you can use the{' '}
-              <Link to="compose" href="#" smooth={true} duration={300}>
+              <Link to="compose" href="#" smooth={true} duration={500}>
                 message composer
               </Link>{' '}
               to convert your boring text into glorious Comic Sans.
@@ -90,7 +90,7 @@ class Setup extends Component {
           <div>
             <p className="m_t_0">
               You're ready to Slack in style. Head over to the{' '}
-              <Link to="compose" href="#" smooth={true} duration={300}>
+              <Link to="compose" href="#" smooth={true} duration={500}>
                 message composer
               </Link>{' '}
               and type your message.
@@ -105,8 +105,12 @@ class Setup extends Component {
           <div>
             <ul className="m_t_0">
               <li>
-                We're dealing with images, not a font. So you can forget about
+                Comic Slack uses images, not a font. So you can forget about
                 kerning.
+              </li>
+              <li>
+                I've had to remove transparency from each image so that they are
+                still readable with Slack's dark mode.
               </li>
               <li>
                 Comic Slack currently only supports a-z, 0-9 and a small

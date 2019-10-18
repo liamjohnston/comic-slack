@@ -1,18 +1,27 @@
 {
-  "main.css": "/comic-slack/static/css/main.0b0eb8fa.chunk.css",
-  "main.js": "/comic-slack/static/js/main.fb62411b.chunk.js",
-  "main.js.map": "/comic-slack/static/js/main.fb62411b.chunk.js.map",
-  "static/css/1.762a3ab6.chunk.css": "/comic-slack/static/css/1.762a3ab6.chunk.css",
-  "static/js/1.8ba5ef42.chunk.js": "/comic-slack/static/js/1.8ba5ef42.chunk.js",
-  "static/js/1.8ba5ef42.chunk.js.map": "/comic-slack/static/js/1.8ba5ef42.chunk.js.map",
-  "runtime~main.js": "/comic-slack/static/js/runtime~main.56d2e786.js",
-  "runtime~main.js.map": "/comic-slack/static/js/runtime~main.56d2e786.js.map",
-  "static/css/main.0b0eb8fa.chunk.css.map": "/comic-slack/static/css/main.0b0eb8fa.chunk.css.map",
-  "static/media/slack-menu.jpg": "/comic-slack/static/media/slack-menu.c9ba6021.jpg",
-  "static/media/comic-slack.png": "/comic-slack/static/media/comic-slack.ee7b5459.png",
-  "static/media/add-to-slack.jpg": "/comic-slack/static/media/add-to-slack.574364be.jpg",
-  "static/css/1.762a3ab6.chunk.css.map": "/comic-slack/static/css/1.762a3ab6.chunk.css.map",
-  "index.html": "/comic-slack/index.html",
-  "precache-manifest.596cc878f9698a7208dd81f590af04d9.js": "/comic-slack/precache-manifest.596cc878f9698a7208dd81f590af04d9.js",
-  "service-worker.js": "/comic-slack/service-worker.js"
+  "files": {
+    "main.css": "/comic-slack/static/css/main.9e237501.chunk.css",
+    "main.js": "/comic-slack/static/js/main.14fa496e.chunk.js",
+    "main.js.map": "/comic-slack/static/js/main.14fa496e.chunk.js.map",
+    "runtime-main.js": "/comic-slack/static/js/runtime-main.f0667e87.js",
+    "runtime-main.js.map": "/comic-slack/static/js/runtime-main.f0667e87.js.map",
+    "static/css/2.fbac66a9.chunk.css": "/comic-slack/static/css/2.fbac66a9.chunk.css",
+    "static/js/2.de86bc95.chunk.js": "/comic-slack/static/js/2.de86bc95.chunk.js",
+    "static/js/2.de86bc95.chunk.js.map": "/comic-slack/static/js/2.de86bc95.chunk.js.map",
+    "index.html": "/comic-slack/index.html",
+    "precache-manifest.f36ef99736b7cb0852541326fdd57497.js": "/comic-slack/precache-manifest.f36ef99736b7cb0852541326fdd57497.js",
+    "service-worker.js": "/comic-slack/service-worker.js",
+    "static/css/2.fbac66a9.chunk.css.map": "/comic-slack/static/css/2.fbac66a9.chunk.css.map",
+    "static/css/main.9e237501.chunk.css.map": "/comic-slack/static/css/main.9e237501.chunk.css.map",
+    "static/media/add-to-slack.jpg": "/comic-slack/static/media/add-to-slack.574364be.jpg",
+    "static/media/comic-slack.png": "/comic-slack/static/media/comic-slack.ee7b5459.png",
+    "static/media/slack-menu.jpg": "/comic-slack/static/media/slack-menu.c9ba6021.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0667e87.js",
+    "static/css/2.fbac66a9.chunk.css",
+    "static/js/2.de86bc95.chunk.js",
+    "static/css/main.9e237501.chunk.css",
+    "static/js/main.14fa496e.chunk.js"
+  ]
 }

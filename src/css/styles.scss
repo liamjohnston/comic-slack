@@ -57,14 +57,13 @@ input[type='submit'] {
   margin-right: 1rem;
   font-size: 18px;
   color: #fff;
-  background-color: #74a23a;
+  background-color: #592466;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   padding: 0 15px;
   height: 40px;
   font-family: 'Comic Sans MS';
-  box-shadow: 0 2px 0 0 #5a8326;
   letter-spacing: 1px;
   position: relative;
   &:active {
@@ -114,9 +113,12 @@ textarea {
 }
 
 .copied-alert {
-  color: #73a239;
+  color: #582566;
   margin: 1rem 0 0.5rem 0;
-  transition: opacity 0.25s ease;
+  border: 1px solid #582566;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #fefaff;
 }
 
 @media (min-width: 40rem) {

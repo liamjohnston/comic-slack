@@ -18,12 +18,14 @@ class App extends Component {
           </div>
         </header>
 
-        <div id="compose" className="use-wrap wrapper">
-          <Use />
-        </div>
-        <div id="setup" className="setup-wrap wrapper">
-          <Setup />
-        </div>
+        <main>
+          <div id="compose" className="use-wrap wrapper">
+            <Use />
+          </div>
+          <div id="setup" className="setup-wrap wrapper">
+            <Setup />
+          </div>
+        </main>
       </Fragment>
     );
   }

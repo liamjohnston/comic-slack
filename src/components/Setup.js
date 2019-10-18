@@ -33,7 +33,7 @@ class Setup extends Component {
 
         <section>
           <header>
-            <h4 className="m_t_0 m_b_sm">Step 1.</h4>
+            <h3 className="m_t_0 m_b_sm">Step 1.</h3>
             <h2 className="m_t_0">Get the 'emojis'</h2>
           </header>
           <div>
@@ -49,7 +49,7 @@ class Setup extends Component {
 
         <section>
           <header>
-            <h4 className="m_t_0 m_b_sm">Step 2.</h4>
+            <h3 className="m_t_0 m_b_sm">Step 2.</h3>
             <h2 className="m_t_0">Enable bulk emoji uploading</h2>
           </header>
           <div>
@@ -70,7 +70,7 @@ class Setup extends Component {
 
         <section>
           <header>
-            <h4 className="m_t_0 m_b_sm">Step 3.</h4>
+            <h3 className="m_t_0 m_b_sm">Step 3.</h3>
             <h2 className="m_t_0">Add the emojis to Slack</h2>
           </header>
           <div>

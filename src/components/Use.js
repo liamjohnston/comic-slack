@@ -12,7 +12,7 @@ class Use extends Component {
     this.state = {
       value: '',
       comicsansified: '',
-      disabled: true
+      disabled: true,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -67,7 +67,7 @@ class Use extends Component {
     this.setState(
       {
         copied: false,
-        value
+        value,
       },
       () => {
         this.convertIt();
@@ -80,9 +80,10 @@ class Use extends Component {
   }
 
   render() {
+    const { comicsansified, disabled, copied } = this.state;
     return (
       <Fragment>
-        <h3>Use Comic Sans in slack! (sort of)</h3>
+        <h2>Use Comic Sans in slack! (sort of)</h2>
         <form id="cs-form" onSubmit={this.handleSubmit}>
           <label htmlFor="cs-content" className="m_b_sm">
             Your message:
@@ -94,24 +95,24 @@ class Use extends Component {
             rows="5"
           />
           <CopyToClipboard
-            text={this.state.comicsansified}
+            text={comicsansified}
             onCopy={() => this.setState({ copied: true })}
           >
             <input
               type="submit"
               value="Copy as Comic Sans"
-              disabled={this.state.disabled}
+              disabled={disabled}
             />
           </CopyToClipboard>
 
-          <div
-            className={`copied-alert ${!this.state.copied ? 'invisible' : ''}`}
-          >
-            <span role="img" aria-label="yay emoji">
-              🎉
-            </span>
-            <strong>Copied!</strong> Now paste it into a Slack message
-          </div>
+          {copied && (
+            <div className="copied-alert">
+              <span role="img" aria-label="yay emoji">
+                🎉
+              </span>
+              <strong>Copied!</strong> Now paste it into a Slack message
+            </div>
+          )}
         </form>
         <p className="text-sm">
           <strong>Heads up!</strong> Your slack team's account will need to have

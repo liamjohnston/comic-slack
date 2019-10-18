@@ -4,7 +4,7 @@ import Use from './components/Use';
 import Setup from './components/Setup';
 
 import 'sanitize.css';
-import './css/styles.min.css';
+import './css/styles.scss';
 import logo from './img/comic-slack.png';
 
 class App extends Component {

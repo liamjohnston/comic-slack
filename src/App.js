@@ -8,27 +8,27 @@ import './css/styles.scss'
 import logo from './img/comic-slack.png'
 
 class App extends Component {
-    render() {
-        return (
-            <Fragment>
-                <header className="header">
-                    <img src={logo} alt="Comic Slack logo" width="50" />
-                    <div>
-                        <h1 className="m_t_0 m_b_0">Comic Slack</h1>
-                    </div>
-                </header>
+  render() {
+    return (
+      <Fragment>
+        <header className="header">
+          <img src={logo} alt="Comic Slack logo" width="50" />
+          <div>
+            <h1 className="m_t_0 m_b_0">Comic Slack</h1>
+          </div>
+        </header>
 
-                <main>
-                    <div id="compose" className="use-wrap wrapper">
-                        <Use />
-                    </div>
-                    <div id="setup" className="setup-wrap wrapper">
-                        <Setup />
-                    </div>
-                </main>
-            </Fragment>
-        )
-    }
+        <main>
+          <div id="compose" className="use-wrap wrapper">
+            <Use />
+          </div>
+          <div id="setup" className="setup-wrap wrapper">
+            <Setup />
+          </div>
+        </main>
+      </Fragment>
+    )
+  }
 }
 
 export default App

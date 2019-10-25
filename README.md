@@ -9,6 +9,6 @@ https://liamjohnston.github.io/comic-slack/
 ## Development
 ```
 nvm use
-yarn install
+yarn
 yarn start
 ```

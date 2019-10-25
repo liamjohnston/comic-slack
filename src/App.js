@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from 'react';
 //import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Use from './components/Use'
-import Setup from './components/Setup'
+import Use from './components/Use';
+import Setup from './components/Setup';
 
-import 'sanitize.css'
-import './css/styles.scss'
-import logo from './img/comic-slack.png'
+import 'sanitize.css';
+import './css/styles.scss';
+import logo from './img/comic-slack.png';
 
 class App extends Component {
   render() {
@@ -27,8 +27,8 @@ class App extends Component {
           </div>
         </main>
       </Fragment>
-    )
+    );
   }
 }
 
-export default App
+export default App;

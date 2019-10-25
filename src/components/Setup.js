@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from 'react';
 //import { Link } from 'react-router-dom';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
-import imgMenu from '../img/slack-menu.jpg'
-import imgAddToSlack from '../img/add-to-slack.jpg'
+import imgMenu from '../img/slack-menu.jpg';
+import imgAddToSlack from '../img/add-to-slack.jpg';
 
-const zipPath = `${process.env.PUBLIC_URL}/files/`
+const zipPath = `${process.env.PUBLIC_URL}/files/`;
 
 class Setup extends Component {
   render() {
@@ -121,8 +121,8 @@ class Setup extends Component {
           </div>
         </section>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Setup
+export default Setup;

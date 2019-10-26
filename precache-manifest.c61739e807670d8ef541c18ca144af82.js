@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b6a017526f23c9ef93c7b17977d2504",
+    "revision": "bb38b3ea22476db4c23ddaccd6b7fe6d",
     "url": "/comic-slack/index.html"
   },
   {
-    "revision": "9104babd499ef9e6dc28",
+    "revision": "739f4b65a339b5923ef4",
     "url": "/comic-slack/static/css/2.fbac66a9.chunk.css"
   },
   {
-    "revision": "0f18fe12d84f79fe4b25",
+    "revision": "c507808b5de8390d91ff",
     "url": "/comic-slack/static/css/main.9e237501.chunk.css"
   },
   {
-    "revision": "9104babd499ef9e6dc28",
-    "url": "/comic-slack/static/js/2.de86bc95.chunk.js"
+    "revision": "739f4b65a339b5923ef4",
+    "url": "/comic-slack/static/js/2.b10fcb17.chunk.js"
   },
   {
-    "revision": "0f18fe12d84f79fe4b25",
-    "url": "/comic-slack/static/js/main.14fa496e.chunk.js"
+    "revision": "c507808b5de8390d91ff",
+    "url": "/comic-slack/static/js/main.7b31f5cb.chunk.js"
   },
   {
     "revision": "0bf045dc65a539a78e14",

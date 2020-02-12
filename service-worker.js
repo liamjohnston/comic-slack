@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/comic-slack/precache-manifest.c61739e807670d8ef541c18ca144af82.js"
+  "/comic-slack/precache-manifest.78062caa8806d36e204f88193259aabb.js"
 );
 
 self.addEventListener('message', (event) => {

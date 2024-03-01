@@ -9,14 +9,18 @@ const Use = () => {
   const [disabled, setDisabled] = useState(true);
   const [copied, setCopied] = useState(false);
 
-  const convertAndCopy = () => {
+  const convertAndCopy = (mode = 'normal') => {
     let cstr = '';
 
     //Loop through each character in the textarea value and swap it out with the :cs-* equivalent (where possible)
     Array.from(value).forEach(char => {
       // 0-9 and a-z (either case)
       if (re.test(char)) {
-        cstr += `:cs-${char}:`;
+        if (mode === 'intensify') {
+          cstr += `:cs-${char}-intensifies:`;
+        } else {
+          cstr += `:cs-${char}:`;
+        }
       } else if (Object.keys(nonAlphaNumericCharMap).includes(char)) {
         // We also have emojis for some of the more common symbols...
         cstr += nonAlphaNumericCharMap[char].csMapping;
@@ -52,6 +56,11 @@ const Use = () => {
     setCopied(true);
   };
 
+  const handleIntensifyCopy = () => {
+    convertAndCopy('intensify');
+    setCopied(true);
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
   };
@@ -74,6 +83,12 @@ const Use = () => {
           value="Copy as Comic Sans"
           disabled={disabled}
           onClick={handleCopy}
+        />
+        <input
+          type="submit"
+          value="Copy as intense-mode"
+          disabled={disabled}
+          onClick={handleIntensifyCopy}
         />
 
         {copied && (

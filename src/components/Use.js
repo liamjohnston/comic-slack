@@ -18,6 +18,8 @@ const Use = () => {
       if (re.test(char)) {
         if (mode === 'intensify') {
           cstr += `:cs-${char}-intensifies:`;
+        } else if (mode === 'party') {
+          cstr += `:party-cs-${char}:`;
         } else {
           cstr += `:cs-${char}:`;
         }
@@ -61,6 +63,11 @@ const Use = () => {
     setCopied(true);
   };
 
+  const handlePartyCopy = () => {
+    convertAndCopy('intensify');
+    setCopied(true);
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
   };
@@ -78,18 +85,26 @@ const Use = () => {
           onChange={handleChange}
           rows="5"
         />
-        <input
-          type="submit"
-          value="Copy as Comic Sans"
-          disabled={disabled}
-          onClick={handleCopy}
-        />
-        <input
-          type="submit"
-          value="Copy as intense-mode"
-          disabled={disabled}
-          onClick={handleIntensifyCopy}
-        />
+        <div className="button_container">
+          <input
+            type="submit"
+            value="Copy as Comic Sans"
+            disabled={disabled}
+            onClick={handleCopy}
+          />
+          <input
+            type="submit"
+            value="Copy as intense-mode"
+            disabled={disabled}
+            onClick={handleIntensifyCopy}
+          />
+          <input
+            type="submit"
+            value="Copy as party-mode"
+            disabled={disabled}
+            onClick={handleIntensifyCopy}
+          />
+        </div>
 
         {copied && (
           <div className="copied-alert">

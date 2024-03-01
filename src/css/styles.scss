@@ -29,6 +29,14 @@ Utilities
 .m_b_md {
   margin-bottom: 1rem;
 }
+.button_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  max-width: 60rem;
+}
 
 .text-sm {
   font-size: 1.4rem;

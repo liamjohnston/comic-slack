@@ -14,7 +14,13 @@ class App extends Component {
         <header className="header">
           <img src={logo} alt="Comic Slack logo" width="50" />
           <div>
-            <h1 className="m_t_0 m_b_0">Comic Slack</h1>
+            <h1 className="m_t_0 m_b_0">
+              Comic Slack - (Fork of{' '}
+              <a href="https://liamjohnston.github.io/comic-slack/">
+                @liamjohnston's Comic-Slack
+              </a>{' '}
+              )
+            </h1>
           </div>
         </header>
 

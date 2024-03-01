@@ -1,7 +1,7 @@
 {
   "name": "comic-slack",
   "version": "0.1.0",
-  "homepage": "https://liamjohnston.github.io/comic-slack/",
+  "homepage": "https://2f8daab0.comic-slack.pages.dev/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

@@ -18,6 +18,8 @@ const Use = () => {
       if (re.test(char)) {
         if (mode === 'intensify') {
           cstr += `:cs-${char}-intensifies:`;
+        } else if (mode === 'wobble') {
+          cstr += `:cs-${char}-wobble:`;
         } else if (mode === 'party') {
           cstr += `:party-cs-${char}:`;
         } else {
@@ -64,7 +66,12 @@ const Use = () => {
   };
 
   const handlePartyCopy = () => {
-    convertAndCopy('intensify');
+    convertAndCopy('party');
+    setCopied(true);
+  };
+
+  const handleWobbleCopy = () => {
+    convertAndCopy('wobble');
     setCopied(true);
   };
 
@@ -102,7 +109,13 @@ const Use = () => {
             type="submit"
             value="Copy as party-mode"
             disabled={disabled}
-            onClick={handleIntensifyCopy}
+            onClick={handlePartyCopy}
+          />
+          <input
+            type="submit"
+            value="Copy as Wobble-mode"
+            disabled={disabled}
+            onClick={handleWobbleCopy}
           />
         </div>
 

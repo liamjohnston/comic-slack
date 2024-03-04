@@ -9,14 +9,22 @@ const Use = () => {
   const [disabled, setDisabled] = useState(true);
   const [copied, setCopied] = useState(false);
 
-  const convertAndCopy = () => {
+  const convertAndCopy = (mode = 'normal') => {
     let cstr = '';
 
     //Loop through each character in the textarea value and swap it out with the :cs-* equivalent (where possible)
     Array.from(value).forEach(char => {
       // 0-9 and a-z (either case)
       if (re.test(char)) {
-        cstr += `:cs-${char}:`;
+        if (mode === 'intensify') {
+          cstr += `:cs-${char}-intensifies:`;
+        } else if (mode === 'wobble') {
+          cstr += `:cs-${char}-wobble:`;
+        } else if (mode === 'party') {
+          cstr += `:party-cs-${char}:`;
+        } else {
+          cstr += `:cs-${char}:`;
+        }
       } else if (Object.keys(nonAlphaNumericCharMap).includes(char)) {
         // We also have emojis for some of the more common symbols...
         cstr += nonAlphaNumericCharMap[char].csMapping;
@@ -52,6 +60,21 @@ const Use = () => {
     setCopied(true);
   };
 
+  const handleIntensifyCopy = () => {
+    convertAndCopy('intensify');
+    setCopied(true);
+  };
+
+  const handlePartyCopy = () => {
+    convertAndCopy('party');
+    setCopied(true);
+  };
+
+  const handleWobbleCopy = () => {
+    convertAndCopy('wobble');
+    setCopied(true);
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
   };
@@ -69,12 +92,32 @@ const Use = () => {
           onChange={handleChange}
           rows="5"
         />
-        <input
-          type="submit"
-          value="Copy as Comic Sans"
-          disabled={disabled}
-          onClick={handleCopy}
-        />
+        <div className="button_container">
+          <input
+            type="submit"
+            value="Copy as Comic Sans"
+            disabled={disabled}
+            onClick={handleCopy}
+          />
+          <input
+            type="submit"
+            value="Copy as intense-mode"
+            disabled={disabled}
+            onClick={handleIntensifyCopy}
+          />
+          <input
+            type="submit"
+            value="Copy as party-mode"
+            disabled={disabled}
+            onClick={handlePartyCopy}
+          />
+          <input
+            type="submit"
+            value="Copy as Wobble-mode"
+            disabled={disabled}
+            onClick={handleWobbleCopy}
+          />
+        </div>
 
         {copied && (
           <div className="copied-alert">

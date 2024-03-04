@@ -37,7 +37,7 @@ const Setup = () => (
           <a href={`${zipPath}characters.zip`} download>
             &#11015; Download the images
           </a>{' '}
-          (zip, 70KB).
+          (zip, ~1.5MB).
         </p>
         <p>Unzip it.</p>
       </div>
